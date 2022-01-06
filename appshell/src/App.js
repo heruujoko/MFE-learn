@@ -1,9 +1,10 @@
+// @flow
 import React from "react";
 import {BrowserRouter as Router} from "react-router-dom";
 
 const Landing = React.lazy(() => import("Landing/Landing"));
 
-const renderMFE = (MFE) => {
+const renderMFE = (MFE: React.Element) => {
     return(
         <React.Suspense fallback="Loading...">
             <MFE />

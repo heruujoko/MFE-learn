@@ -42,7 +42,7 @@ module.exports = {
           loader: "babel-loader",
           exclude: /node_modules/,
           options: {
-            presets: ["@babel/preset-react"],
+            presets: ["@babel/preset-react", "@babel/preset-flow"],
           },
         },
       ],
@@ -83,6 +83,6 @@ module.exports = {
         }),
       new HtmlWebpackPlugin({
         template: "./public/index.html",
-      }),
+      })
     ],
   };  

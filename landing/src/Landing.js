@@ -1,8 +1,9 @@
 import React from 'react';
+import Counter from './components/Counter';
 
 const Landing = () => {
     return (
-        <p>Landing Page</p>
+        <Counter />
     )
 }
 
