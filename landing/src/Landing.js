@@ -1,9 +1,13 @@
 import React from 'react';
-import Counter from './components/Counter';
+import { Provider } from "react-redux";
+import Catalogs from './components/Catalogs';
+import store from './redux/index';
 
 const Landing = () => {
     return (
-        <Counter />
+        <Provider store={store}>
+            <Catalogs />
+        </Provider>
     )
 }
 
